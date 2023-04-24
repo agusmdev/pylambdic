@@ -65,6 +65,9 @@ def my_lambda_handler(input_data: InputModel, context) -> OutputModel:
     return OutputModel(message=message, request_id=request_id)
 ```
 
+## Disclaimer
+
+Pylambdic is intended to be used as part of independent handlers that do specific tasks, or microservices as part of an event pipeline, it is not intended to be used as a direct API endpoint. If you need a fully-fledged serverless API, checkout FastAPI + Mangum
 
 ## Contributing
 
