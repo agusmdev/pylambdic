@@ -25,7 +25,7 @@ Here's an example of how to use pylambdic:
 
 ```python
 from pydantic import BaseModel
-import lamdantic
+import pylambdic
 
 class InputModel(BaseModel):
     name: str
@@ -34,7 +34,7 @@ class InputModel(BaseModel):
 class OutputModel(BaseModel):
     message: str
 
-@lamdantic.handler
+@pylambdic.handler
 def my_lambda_handler(input_data: InputModel) -> OutputModel:
     return OutputModel(message=f"Hello {input_data.name}, you are {input_data.age} years old.")
 ```
